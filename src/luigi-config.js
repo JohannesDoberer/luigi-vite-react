@@ -28,6 +28,19 @@ export const luigiConfig = {
                     enabled: false
                 },
                 viewUrl: 'https://fiddle.luigi-project.io/examples/microfrontends/fundamental/empty-demo-page.html'
+            },
+            {
+                pathSegment: 'welcome',
+                label: 'Welcome',
+                category: {
+                    label: 'My Category',
+                    icon: 'dimension',
+                    collapsible: true
+                },
+                loadingIndicator: {
+                    enabled: false
+                },
+                viewUrl: './welcome'
             }]
         }]
     },

@@ -1,14 +1,18 @@
-import { useState } from 'react'
+import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import LuigiComponent from './LuigiComponent';
-
+import Welcome from './welcome';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <LuigiComponent></LuigiComponent>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LuigiComponent />}></Route>
+          <Route path="/welcome" element={<Welcome />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
